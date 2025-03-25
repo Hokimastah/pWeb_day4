@@ -1,0 +1,184 @@
+/* Reset dan Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6f61;
+}
+
+/* Menu Section Styles */
+.menu-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.menu-category {
+    margin-bottom: 20px;
+}
+
+.menu-category h3 {
+    border-bottom: 2px solid #ff6f61;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.menu-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.menu-item h4 {
+    margin-bottom: 5px;
+}
+
+.menu-item p {
+    color: #666;
+    width: 100%;
+}
+
+.menu-item .price {
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+/* Welcome Section Styles */
+.welcome-section {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e5614f;
+}
+
+/* About Section Styles */
+.about-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.about-section h3 {
+    margin-top: 20px;
+    color: #ff6f61;
+}
+
+/* Kontak Section Styles */
+.kontak-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.kontak-info, .kontak-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.kontak-info {
+    flex: 1;
+}
+
+.kontak-form {
+    flex: 1;
+}
+
+.kontak-form input, 
+.kontak-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.kontak-form textarea {
+    height: 150px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .kontak-section {
+        flex-direction: column;
+    }
+}
